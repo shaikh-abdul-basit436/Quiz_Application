@@ -661,3 +661,315 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+/* =========================================================
+   GLOBAL THEME SYSTEM
+   ========================================================= */
+
+/* -------------------------
+   DEFAULT DARK MODE
+   ------------------------- */
+
+html.dark-mode,
+html.dark-mode body {
+    background: #0D0D0D !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Dark cards */
+html.dark-mode .card,
+html.dark-mode .category-card,
+html.dark-mode .difficulty-card,
+html.dark-mode .option,
+html.dark-mode .category-btn,
+html.dark-mode .difficulty-btn {
+    background: #1A1A1A !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Dark buttons */
+html.dark-mode button,
+html.dark-mode .btn {
+    color: #FFFFFF;
+}
+
+
+/* Dark headings */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode p,
+html.dark-mode label {
+    color: inherit;
+}
+
+
+/* -------------------------
+   LIGHT MODE
+   ------------------------- */
+
+html.light-mode,
+html.light-mode body {
+    background: #F4F4F4 !important;
+    color: #171717 !important;
+}
+
+
+/* Main cards */
+html.light-mode .card,
+html.light-mode .category-card,
+html.light-mode .difficulty-card {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+}
+
+
+/* Category cards / links / buttons */
+html.light-mode .category-btn,
+html.light-mode .difficulty-btn,
+html.light-mode .category,
+html.light-mode .difficulty {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+}
+
+
+/* Generic buttons */
+html.light-mode button,
+html.light-mode .btn {
+    color: #171717;
+}
+
+
+/* Quiz options */
+html.light-mode .option {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+    border-color: #D4AF37 !important;
+}
+
+
+/* Quiz option hover */
+html.light-mode .option:hover {
+    background: #FFF8DF !important;
+    color: #171717 !important;
+}
+
+
+/* Text */
+html.light-mode h1,
+html.light-mode h2,
+html.light-mode h3,
+html.light-mode p,
+html.light-mode label,
+html.light-mode .question,
+html.light-mode .subtitle {
+    color: #171717 !important;
+}
+
+
+/* Keep gold selected/active elements */
+html.light-mode .active,
+html.light-mode .selected {
+    color: #171717 !important;
+}
+
+
+/* -------------------------
+   THEME TOGGLE
+   ------------------------- */
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999;
+}
+
+#themeToggle {
+    width: 46px;
+    height: 46px;
+
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+
+    background: #161616;
+    color: #D4AF37;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+#themeToggle:hover {
+    transform: scale(1.08);
+}
+
+
+/* Light toggle */
+html.light-mode #themeToggle {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+    border-color: #D4AF37 !important;
+}
+
+
+/* Dark toggle */
+html.dark-mode #themeToggle {
+    background: #161616 !important;
+    color: #D4AF37 !important;
+    border-color: #D4AF37 !important;
+}
+
+
+/* -------------------------
+   LIGHT MODE FORM ELEMENTS
+   ------------------------- */
+
+html.light-mode input,
+html.light-mode select,
+html.light-mode textarea {
+    background: #FFFFFF;
+    color: #171717;
+}
+
+
+/* -------------------------
+   LIGHT MODE LINKS
+   ------------------------- */
+
+html.light-mode a {
+    color: #171717;
+}
+
+
+/* -------------------------
+   GOLD ACTIVE ELEMENT
+   ------------------------- */
+
+html.light-mode .selected,
+html.light-mode .active {
+    background: #D4AF37 !important;
+    color: #171717 !important;
+}
+
+/* =========================================================
+   FINAL LIGHT MODE CARD FIX
+   ========================================================= */
+
+/* Category cards + Result statistic cards */
+html.light-mode .feature {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+    border: 1px solid #D4AF37 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.12) !important;
+}
+
+/* Text inside feature cards */
+html.light-mode .feature span {
+    color: #171717 !important;
+}
+
+/* Numbers on Result page */
+html.light-mode .feature strong {
+    color: #171717 !important;
+}
+
+/* Category card hover */
+html.light-mode .feature:hover {
+    background: #D4AF37 !important;
+    color: #000000 !important;
+    border-color: #D4AF37 !important;
+}
+
+/* Text while hovering */
+html.light-mode .feature:hover span,
+html.light-mode .feature:hover strong {
+    color: #000000 !important;
+}
+
+
+/* Result page incorrect-answer cards */
+html.light-mode .review-card {
+    background: #FFFFFF !important;
+    color: #171717 !important;
+    border: 1px solid #D4AF37 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.10) !important;
+}
+
+/* Text inside incorrect-answer cards */
+html.light-mode .review-card p,
+html.light-mode .review-card strong {
+    color: #171717 !important;
+}
+
+
+/* Keep the actual Your Answer / Correct Answer colors */
+html.light-mode .review-card p[style*="ff6961"] {
+    color: #d32f2f !important;
+}
+
+html.light-mode .review-card p[style*="7CFC00"] {
+    color: #218838 !important;
+}
+
+
+/* Result message stays gold */
+html.light-mode .message-box {
+    background: #D4AF37 !important;
+    color: #000000 !important;
+}
+
+
+/* Restart / Start Quiz button */
+html.light-mode .start-btn {
+    background: #D4AF37 !important;
+    color: #000000 !important;
+}
+
+html.light-mode .start-btn:hover {
+    background: #F4D160 !important;
+    color: #000000 !important;
+}
+
+
+/* =========================================================
+   DARK MODE - KEEP ORIGINAL CARD APPEARANCE
+   ========================================================= */
+
+html.dark-mode .feature {
+    background: #252525 !important;
+    color: #FFFFFF !important;
+    border-color: #333333 !important;
+}
+
+html.dark-mode .feature span {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .feature strong {
+    color: #D4AF37 !important;
+}
+
+html.dark-mode .review-card {
+    background: #2C2C2C !important;
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .review-card p {
+    color: inherit;
+}
