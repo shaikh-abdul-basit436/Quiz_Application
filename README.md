@@ -153,7 +153,7 @@ python app.py
 Open your browser and visit:
 
 ```
-http://127.0.0.1:5000
+on the localhost provided by your system
 ```
 
 ---
@@ -207,7 +207,6 @@ Restart Quiz
 - Database Integration (MySQL)
 - Performance Analytics
 - Certificate Generation
-- Dark/Light Theme Toggle
 - Multiplayer Quiz
 - Cloud Deployment
 
