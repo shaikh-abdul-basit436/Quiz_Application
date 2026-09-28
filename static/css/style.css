@@ -979,9 +979,9 @@ html.dark-mode .review-card p {
     padding:15px;
     font-size:18px;
     font-weight:bold;
-    background:#b87333;
-    color:#fff;
-    border:2px solid #d4af37;
+    background:transparent;
+    color:#b8860b;
+    border:2px solid #b8860b;
     border-radius:8px;
     text-align:center;
     text-decoration:none;
@@ -990,6 +990,7 @@ html.dark-mode .review-card p {
     cursor:pointer;
 }
 .review-btn:hover{
-    background:#c46a2e;
+    background:#b8860b;
+    color:#fff;
     transform:scale(1.03);
 }
