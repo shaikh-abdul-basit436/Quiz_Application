@@ -990,7 +990,7 @@ html.dark-mode .review-card p {
     cursor:pointer;
 }
 .review-btn:hover{
-    background:#b8860b;
-    color:#fff;
+    background:transparent;
+    color:#b8860b;
     transform:scale(1.03);
 }
