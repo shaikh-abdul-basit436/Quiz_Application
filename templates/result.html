@@ -86,43 +86,21 @@ href="{{ url_for('static', filename='css/style.css') }}">
 
 </div>
 
-{% if incorrect_answers %}
+<button onclick="document.getElementById('review-section').style.display='block';this.style.display='none';" class="review-btn">Review Answers</button>
 
+<div id="review-section" style="display:none;">
+{% if incorrect_answers %}
 <h2 style="margin-top:35px;">Incorrect Answers</h2>
 
 {% for item in incorrect_answers %}
-
 <div class="review-card">
-
-<p>
-
-<strong>Question:</strong>
-
-{{ item.question }}
-
-</p>
-
-<p style="color:#ff6961;">
-
-<strong>Your Answer:</strong>
-
-{{ item.your_answer }}
-
-</p>
-
-<p style="color:#7CFC00;">
-
-<strong>Correct Answer:</strong>
-
-{{ item.correct_answer }}
-
-</p>
-
+<p><strong>Question:</strong> {{ item.question }}</p>
+<p style="color:#ff6961;"><strong>Your Answer:</strong> {{ item.your_answer }}</p>
+<p style="color:#7CFC00;"><strong>Correct Answer:</strong> {{ item.correct_answer }}</p>
 </div>
-
 {% endfor %}
-
 {% endif %}
+</div>
 
 <a href="{{ url_for('restart') }}" class="start-btn">
 

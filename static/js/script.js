@@ -81,6 +81,34 @@ document.addEventListener("keydown", function(e) {
 });
 
 // ===============================
+// PROCTORING: Warn on tab switch
+// ===============================
+(function () {
+    document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+            const form = document.getElementById("quizForm");
+            if (form) {
+                const actionField = document.getElementById("actionField");
+                const autoSubmit = document.getElementById("autoSubmit");
+                if (actionField) actionField.value = "submit";
+                if (autoSubmit) autoSubmit.value = "true";
+                form.submit();
+            }
+        }
+    });
+    window.addEventListener("blur", function () {
+        const form = document.getElementById("quizForm");
+        if (form) {
+            const actionField = document.getElementById("actionField");
+            const autoSubmit = document.getElementById("autoSubmit");
+            if (actionField) actionField.value = "submit";
+            if (autoSubmit) autoSubmit.value = "true";
+            form.submit();
+        }
+    });
+})();
+
+// ===============================
 // PWA SERVICE WORKER
 // ===============================
 
