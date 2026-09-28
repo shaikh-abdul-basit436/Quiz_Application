@@ -4,6 +4,14 @@ A modern and interactive **Quiz Application** built using **Python Flask**, desi
 
 ---
 
+## 🌐 Live Application
+
+Try the Quiz Application online:
+
+👉 https://quizz-application-bvfu.onrender.com/
+
+---
+
 ## 🚀 Features:
 
 - 🎯 Multiple Quiz Categories:
@@ -16,7 +24,7 @@ A modern and interactive **Quiz Application** built using **Python Flask**, desi
   - Artificial Intelligence
   - Data Structures
 
-- 📊 Thier are Three Difficulty Levels:
+- 📊 Three Difficulty Levels:
   - Easy
   - Medium
   - Hard
@@ -42,6 +50,8 @@ A modern and interactive **Quiz Application** built using **Python Flask**, desi
 
 - 🎨 Modern User Interface
   - Black & Gold Theme
+  - Light & Dark Mode Toggle
+  - Theme preference is saved across pages and refreshes
   - Responsive Design
   - Attractive Cards & Buttons
   - Smooth Navigation
@@ -70,7 +80,7 @@ A modern and interactive **Quiz Application** built using **Python Flask**, desi
 
 ## 📁 Project Structure
 
-```
+```text
 Quiz_Application/
 │
 ├── app.py
@@ -91,7 +101,6 @@ Quiz_Application/
     ├── difficulty.html
     ├── quiz.html
     └── result.html
-```
 
 ---
 
@@ -144,7 +153,7 @@ python app.py
 Open your browser and visit:
 
 ```
-http://127.0.0.1:5000
+on the localhost provided by your system
 ```
 
 ---
@@ -198,7 +207,6 @@ Restart Quiz
 - Database Integration (MySQL)
 - Performance Analytics
 - Certificate Generation
-- Dark/Light Theme Toggle
 - Multiplayer Quiz
 - Cloud Deployment
 
